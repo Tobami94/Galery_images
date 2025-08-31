@@ -1,0 +1,220 @@
+<div class="custom-grid">
+  <div class="grid-item doble">
+    <h2>COMPROMISO</h2>
+    <h1>NUESTROS <br> VALORES.</h1>
+  </div>
+
+  <!-- Ejemplo de item (los demás igual que en tu código) -->
+  <div class="grid-item">
+    <img src="http://boucliertextile.com/wp-content/uploads/2025/08/DNiknU.webp" alt="">
+    <div class="overlay">
+        <h2 class="titulo1">Excelencia en el servicio</h2>
+        <p>Trabajamos con estándares de máxima calidad, cuidando cada detalle para superar las expectativas más altas.</p>
+    </div>
+  </div>
+  
+  
+     <div class="grid-item">
+    <img src="http://boucliertextile.com/wp-content/uploads/2025/08/shutterstock_2648638845.jpg" alt="">
+    <div class="overlay">
+        <h2 class="titulo1">Discreción y confidencialidad</h2>
+        <p>La privacidad de nuestros clientes es esencial. Actuamos con absoluta discreción en hoteles y residencias de lujo.</p>
+    </div>
+  </div>
+  
+      <div class="grid-item">
+    <img src="URL_IMG_3" alt="">
+    <div class="overlay">
+        <h2 class="titulo1">Compromiso absoluto</h2>
+        <p>Nos implicamos plenamente en cada intervención, tratando cada pieza como un patrimonio que merece respeto y dedicación.</p>
+    </div>
+  </div>
+
+   <div class="grid-item">
+    <img src="http://boucliertextile.com/wp-content/uploads/2025/08/f9jjcM.webp" alt="">
+    <div class="overlay">
+        <h2 class="titulo1">Conservación a largo plazo</h2>
+        <p>No solo restauramos la apariencia, preservamos la vida útil y el valor de cada mueble con técnicas profesionales.</p>
+    </div>
+  </div>
+
+  
+ <div class="grid-item">
+    <img src="http://boucliertextile.com/wp-content/uploads/2025/08/shutterstock_2123992688.webp" alt="">
+    <div class="overlay">
+        <h2 class="titulo1">Experiencia especializada</h2>
+        <p>Años de trayectoria y formación continua nos respaldan como expertos en textiles y pieles de alta gama.</p>
+    </div>
+  </div>
+  
+  
+ <div class="grid-item">
+    <img src="http://boucliertextile.com/wp-content/uploads/2025/08/gtzWwh.webp" alt="">
+    <div class="overlay">
+        <h2 class="titulo1">Atención al detalle</h2>
+        <p>Desde una costura en seda hasta un acabado en piel, cada elemento recibe un cuidado meticuloso.</p>
+    </div>
+  </div>
+  
+  
+ <div class="grid-item">
+    <img src="http://boucliertextile.com/wp-content/uploads/2025/08/ac0DRs.webp" alt="">
+    <div class="overlay">
+        <h2 class="titulo1">Seguridad y confianzad</h2>
+        <p>Empleamos productos certificados y procesos que garantizan protección para las piezas, las personas y el entorno.</p>
+    </div>
+  </div>
+    
+
+ <div class="grid-item">
+    <img src="http://boucliertextile.com/wp-content/uploads/2025/08/shutterstock_154287458.jpg" alt="">
+    <div class="overlay">
+        <h2 class="titulo1">Sostenibilidad y respeto ambiental</h2>
+        <p>Aplicamos soluciones responsables con el medioambiente, sin comprometer la eficacia del servicio</p>
+    </div>
+  </div>
+  
+
+   <div class="grid-item">
+    <img src="http://boucliertextile.com/wp-content/uploads/2025/08/shutterstock_2013704705.webp" alt="">
+    <div class="overlay">
+        <h2 class="titulo1">Innovación constante</h2>
+        <p>Incorporamos las últimas tecnologías de limpieza y conservación para garantizar resultados superiores.</p>
+    </div>
+  </div>
+
+
+     <div class="grid-item">
+    <img src="http://boucliertextile.com/wp-content/uploads/2025/08/shutterstock_2592529807.webp" alt="">
+    <div class="overlay">
+        <h2 class="titulo1">Disponibilidad y flexibilidad</h2>
+        <p>Nos adaptamos a las necesidades y tiempos de cada cliente, ofreciendo soluciones rápidas y eficaces.</p>
+    </div>
+  </div>
+  
+
+  <!-- ... Los demás ítems igual que en tu código -->
+</div>
+
+<style>
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 250px;
+  gap: 10px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.grid-item.doble {
+  grid-row: span 2;
+  grid-column: span 1;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.grid-item.doble h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.grid-item.doble h1 {
+  font-size: 3.3rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(217, 177, 29, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.overlay p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+
+/* Tablet: 2 columnas */
+@media (max-width: 1024px) {
+  .custom-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px;
+  }
+
+  .grid-item.doble {
+    grid-row: span 1; /* Ocupa 1 fila en lugar de 2 */
+    grid-column: span 2; /* Se expande horizontalmente */
+    text-align: center;
+  }
+
+  .grid-item.doble h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Móvil: 1 columna */
+@media (max-width: 600px) {
+  .custom-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .grid-item.doble {
+    grid-column: span 1;
+    grid-row: span 1;
+    padding: 15px;
+  }
+
+  .grid-item.doble h1 {
+    font-size: 2rem;
+  }
+
+  .overlay h2 {
+    font-size: 1.1rem;
+  }
+
+  .overlay p {
+    font-size: 0.9rem;
+  }
+}
+</style>
